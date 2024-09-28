@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Inventory</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Restaurant Inventory Management</h1>
+    </header>
+
+    <main>
+        <section id="inventory-form">
+            <h2>Add Inventory Item</h2>
+            <form id="add-item-form">
+                <label for="item-name">Item Name:</label>
+                <input type="text" id="item-name" placeholder="Enter item name" required>
+
+                <label for="item-quantity">Quantity:</label>
+                <input type="number" id="item-quantity" placeholder="Enter quantity" required>
+
+                <label for="item-price">Price per Item:</label>
+                <input type="number" id="item-price" placeholder="Enter price per item" required>
+
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+
+        <section id="inventory-list">
+            <h2>Inventory List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Price per Item</th>
+                        <th>Total Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-body">
+                    <!-- Dynamic inventory items will appear here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="total-section">
+            <h2>Total Inventory Value</h2>
+            <p id="total-price">Total Price: $0</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Restaurant Inventory Management</p>
+    </footer>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
